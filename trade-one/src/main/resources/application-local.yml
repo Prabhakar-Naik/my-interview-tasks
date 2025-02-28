@@ -1,0 +1,24 @@
+spring:
+#  profiles:
+#    active: local
+
+  application:
+    name: trade-one-local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prabhakar
+    username: postgres
+    password: Prabha@225
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8082
+  servlet:
+    context-path: /trade-one
+  forward-headers-strategy: native
+
