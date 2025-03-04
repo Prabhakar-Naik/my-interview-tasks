@@ -5,9 +5,9 @@ spring:
   application:
     name: trade-one-local
   datasource:
-    url: jdbc:postgresql://localhost:5432/prabhakar
-    username: postgres
-    password: Prabha@225
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
